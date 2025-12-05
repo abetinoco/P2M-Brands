@@ -17,8 +17,12 @@ const CallToActionAbout = () => {
         
         <div className="cta-about-right">
           <div className="cta-about-logos">
-            <img src="/funkaway.png" alt="FunkAway" className="cta-about-logo" />
-            <img src="/gentledon.png" alt="Gentledon" className="cta-about-logo" />
+            <a href="https://funkaway.com" target="_blank" rel="noopener noreferrer">
+              <img src="/funkaway.png" alt="FunkAway" className="cta-about-logo" />
+            </a>
+            <a href="https://gentledon.com" target="_blank" rel="noopener noreferrer">
+              <img src="/gentledon.png" alt="Gentledon" className="cta-about-logo" />
+            </a>
           </div>
         </div>
       </div>

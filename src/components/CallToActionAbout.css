@@ -86,15 +86,30 @@
 @media (max-width: 768px) {
   .cta-about .cta-about-inner {
     grid-template-columns: 1fr;
-    gap: 40px;
-    padding-top: 80px;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .cta-about-left {
+    text-align: center;
   }
 
   .cta-about-line2 {
-    margin-left: clamp(30px, 6vw, 60px);
+    margin-left: 0;
   }
 
   .cta-about-right {
-    text-align: left;
+    text-align: center;
+  }
+  
+  .cta-about-logos {
+    align-items: center;
+    margin-left: 0;
+    gap: 30px;
+  }
+  
+  .cta-about-logo:last-child {
+    margin-left: 0;
   }
 }

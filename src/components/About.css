@@ -99,6 +99,8 @@
 
   .about-script {
     margin-left: 0;
+    position: relative;
+    top: -30px;
   }
 
   .about-heading {

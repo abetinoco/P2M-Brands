@@ -6,10 +6,14 @@ const Brands = () => {
       <div className="brands-container">
         <div className="brands-grid">
           <div className="brand-card">
-            <img src="/funkaway.png" alt="Funkaway" className="brand-logo-img" />
+            <a href="https://funkaway.com" target="_blank" rel="noopener noreferrer">
+              <img src="/funkaway.png" alt="Funkaway" className="brand-logo-img" />
+            </a>
           </div>
           <div className="brand-card">
-            <img src="/gentledon.png" alt="Gentle Don" className="brand-logo-img" />
+            <a href="https://gentledon.com" target="_blank" rel="noopener noreferrer">
+              <img src="/gentledon.png" alt="Gentle Don" className="brand-logo-img" />
+            </a>
           </div>
         </div>
       </div>
