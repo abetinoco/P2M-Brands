@@ -1,3 +1,4 @@
+import carImage from '../assets/images/car.webp'
 import './Hero.css'
 
 const Hero = () => {
@@ -19,7 +20,7 @@ const Hero = () => {
           <div className="car-container">
             <div className="nascar-bg" aria-hidden="true"></div>
             <img
-              src="/car.png"
+              src={carImage}
               alt="P2M Brands race car"
               className="car-image-asset"
             />

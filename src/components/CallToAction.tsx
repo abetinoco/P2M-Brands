@@ -1,10 +1,17 @@
+import divider2 from '../assets/images/divider-2.webp'
 import './CallToAction.css'
 
 const CallToAction = () => {
   return (
     <section className="cta">
       <div className="wave-divider wave-top">
-        <img src="/divider 2.png" alt="" style={{display: 'block', width: '100%'}} />
+        <img
+          src={divider2}
+          alt=""
+          style={{ display: 'block', width: '100%' }}
+          loading="lazy"
+          decoding="async"
+        />
       </div>
       
       <div className="cta-inner">

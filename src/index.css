@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Trade Gothic';
-  src: url('/Trade%20Gothic%20Bold%20Condensed%20No.%2020/Trade%20Gothic%20Bold%20Condensed%20No.%2020.otf') format('opentype');
+  src: url('./assets/fonts/TradeGothicBoldCondensed/Trade Gothic Bold Condensed No. 20.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -8,23 +8,7 @@
 
 @font-face {
   font-family: 'Northwell';
-  src: url('/Northwell%20Font/Northwell.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Northwell Alt';
-  src: url('/Northwell%20Font/Northwell-Alt.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Northwell Swash';
-  src: url('/Northwell%20Font/Northwell-Swash.ttf') format('truetype');
+  src: url('./assets/fonts/Northwell/Northwell.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -36,6 +20,8 @@
   font-weight: 400;
   color: #333;
   background-color: #ffffff;
+  --nav-surface: #1e1d19;
+  --nav-overlay: rgba(0, 0, 0, 0.5);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

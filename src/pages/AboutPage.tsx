@@ -1,5 +1,7 @@
 import About from '../components/About'
 import CallToActionAbout from '../components/CallToActionAbout'
+import carImage from '../assets/images/car.webp'
+import divider1 from '../assets/images/divider-1.webp'
 import './AboutPage.css'
 
 const AboutPage = () => {
@@ -26,7 +28,7 @@ const AboutPage = () => {
             <div className="car-container">
               <div className="nascar-bg" aria-hidden="true"></div>
               <img
-                src="/car.png"
+                src={carImage}
                 alt="P2M Brands race car"
                 className="car-image-asset"
               />
@@ -37,9 +39,11 @@ const AboutPage = () => {
       
       <div className="section-divider">
         <img
-          src="/divider 1.png"
+          src={divider1}
           alt=""
           className="section-divider-image"
+          loading="lazy"
+          decoding="async"
         />
       </div>
       

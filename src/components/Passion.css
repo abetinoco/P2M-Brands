@@ -20,7 +20,7 @@
   text-transform: uppercase;
   transform: scaleY(1.2) scaleX(1.1);
   transform-origin: top left;
-  background: url('/passion bg.png') no-repeat center center;
+  background: url('../assets/images/passion-bg.webp') no-repeat center center;
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
@@ -36,6 +36,7 @@
   font-weight: 400;
   letter-spacing: 2px;
   margin-left: 350px;
+  margin-top: 70px;
   white-space: nowrap;
   transform: rotate(-5deg);
   transform-origin: left center;
@@ -96,6 +97,7 @@
   .passion-subtitle {
     font-size: 160px;
     margin-left: 450px;
+    margin-top: 100px;
   }
 }
 
@@ -118,5 +120,6 @@
   .passion-subtitle {
     font-size: 200px;
     margin-left: 550px;
+    margin-top: 140px;
   }
 }
