@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import ScrollRestoration from './components/ScrollRestoration'
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -8,6 +9,7 @@ import AboutPage from './pages/AboutPage'
 function App() {
   return (
     <Router>
+      <ScrollRestoration />
       <div className="app">
         <Header />
         <Routes>
