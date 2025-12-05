@@ -42,12 +42,17 @@
 }
 
 @media (max-width: 1024px) {
+  .passion-container {
+    margin-left: 20px;
+  }
+
   .passion-title {
     font-size: 70px;
   }
   
   .passion-subtitle {
     font-size: 70px;
+    margin-left: 150px;
   }
 }
 
@@ -55,6 +60,10 @@
   .passion {
     padding: 80px 20px;
   }
+
+  .passion-container {
+    margin-left: 10px;
+  }
   
   .passion-title {
     font-size: 50px;
@@ -62,6 +71,7 @@
   
   .passion-subtitle {
     font-size: 50px;
+    margin-left: 80px;
   }
 }
 
