@@ -1,0 +1,157 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(234, 230, 219, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  padding: 8px;
+  position: fixed;
+  left: 28px;
+  top: 20px;
+  transform: none;
+  z-index: 1100;
+}
+
+.menu-toggle span {
+  width: 30px;
+  height: 3px;
+  background: #111;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle span:nth-child(2) {
+  width: 22px;
+}
+
+.menu-toggle span:nth-child(3) {
+  width: 26px;
+}
+
+.menu-toggle:hover span {
+  background: #666;
+}
+
+/* Hamburger animation when open */
+.menu-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+  width: 30px;
+}
+
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+  width: 30px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  background: #1e1d19;
+  padding: 100px 40px 40px;
+  transition: left 0.3s ease;
+  z-index: 1050;
+}
+
+.nav-menu.open {
+  left: 0;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-links li a {
+  font-family: 'Trade Gothic', 'Arial Narrow', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+  display: block;
+  padding: 10px 0;
+}
+
+.nav-links li a:hover {
+  color: #f8b600;
+}
+
+/* Overlay */
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 20px;
+  }
+
+  .menu-toggle {
+    left: 20px;
+  }
+
+  .logo-image {
+    height: 32px;
+  }
+
+  .nav-menu {
+    width: 260px;
+    left: -260px;
+  }
+}

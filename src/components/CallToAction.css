@@ -1,0 +1,223 @@
+/* YELLOW CTA SECTION */
+
+.cta {
+  position: relative;
+  background: #f8b600;
+  padding: 40px 40px 96px;      /* added top padding */
+  text-align: left;
+  overflow: visible;
+}
+
+/* TOP WAVE IMAGE */
+
+.wave-divider.wave-top {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  margin-top: -80px;
+  margin-bottom: -5px;
+  margin-left: -40px;
+  margin-right: -40px;
+  width: calc(100% + 80px);
+  line-height: 0;
+  background: #fbfaf1;
+}
+
+.wave-divider.wave-top img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* CONTENT WRAPPER – CONTROLS GAP FROM WAVE TO BOX */
+
+.cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 160px;           /* distance from bottom of wave to card */
+  display: flex;
+  justify-content: flex-end;    /* keep box on the right */
+  align-items: flex-start;
+  position: relative;
+  z-index: 10;                  /* sits on top of the wave */
+}
+
+/* CARD – MORE SQUARE */
+
+.cta-card {
+  position: relative;
+  width: min(580px, 90vw);      /* wider card */
+  border: 6px solid #ffffff;
+  border-radius: 24px;
+  padding: 120px 40px 90px;     /* taller with more vertical padding */
+  box-sizing: border-box;
+  background: transparent;
+  text-align: center;
+  margin-top: -140px;           /* pull card up onto the wave */
+}
+
+/* "LET'S TALK" HEADING ON BORDER */
+
+.cta-heading {
+  position: absolute;
+  top: -120px;                  /* how much it rides the top border */
+  left: 50px;
+  margin: 0;
+  font-family: 'Northwell', 'Playfair Display', serif;
+  font-size: 160px;
+  font-weight: 400;
+  letter-spacing: 8px;
+  color: #13274b;
+  z-index: 3;
+  text-transform: none;
+}
+
+/* BODY TEXT + BUTTON */
+
+.cta-text {
+  margin: 0 0 28px;
+  font-family: 'Futura', 'Futura Medium', sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.7;
+  color: #13274b;
+  text-align: left;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 20px 52px;
+  border-radius: 6px;
+  border: 2px solid #13274b;
+  background: transparent;
+  font-family: 'Futura', 'Futura Medium', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #13274b;
+  cursor: pointer;
+}
+
+/* TABLET TUNING */
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .cta-heading {
+    font-size: 140px;
+    top: -105px;
+  }
+
+  .cta-text {
+    font-size: 24px;
+  }
+}
+
+/* SMALL TABLET / LARGE MOBILE */
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .cta-heading {
+    font-size: 90px;
+    top: -65px;
+    left: 20px;
+  }
+
+  .cta-text {
+    font-size: 22px;
+  }
+
+  .cta-card {
+    padding: 80px 28px 40px;
+  }
+}
+
+/* MOBILE TUNING */
+
+@media (max-width: 480px) {
+  .wave-divider.wave-top {
+    margin-top: -60px;
+  }
+
+  .cta {
+    padding: 0 20px 72px;
+    margin-top: -2px;
+  }
+
+  .cta-inner {
+    padding-top: 140px;
+    justify-content: flex-end;
+  }
+
+  .cta-card {
+    width: 100%;
+    padding: 56px 24px 24px;
+    margin-top: -60px;
+  }
+
+  .cta-heading {
+    left: 24px;
+    top: -38px;
+    font-size: 54px;
+  }
+
+  .cta-text {
+    font-size: 18px;
+  }
+}
+
+/* LARGE DESKTOP / WIDESCREEN */
+
+@media (min-width: 1440px) {
+  .cta-inner {
+    max-width: 1400px;
+    padding-top: 200px;
+  }
+
+  .cta-card {
+    width: 680px;
+    padding: 140px 50px 110px;
+    margin-top: -160px;
+  }
+
+  .cta-heading {
+    font-size: 190px;
+    top: -140px;
+  }
+
+  .cta-text {
+    font-size: 30px;
+  }
+
+  .cta-button {
+    padding: 24px 60px;
+    font-size: 18px;
+  }
+}
+
+/* ULTRA WIDESCREEN */
+
+@media (min-width: 1920px) {
+  .cta-inner {
+    max-width: 1600px;
+    padding-top: 250px;
+  }
+
+  .cta-card {
+    width: 780px;
+    padding: 160px 60px 130px;
+    margin-top: -180px;
+  }
+
+  .cta-heading {
+    font-size: 220px;
+    top: -160px;
+  }
+
+  .cta-text {
+    font-size: 34px;
+  }
+
+  .cta-button {
+    padding: 28px 70px;
+    font-size: 20px;
+  }
+}

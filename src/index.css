@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Trade Gothic';
+  src: url('/Trade%20Gothic%20Bold%20Condensed%20No.%2020/Trade%20Gothic%20Bold%20Condensed%20No.%2020.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Northwell';
+  src: url('/Northwell%20Font/Northwell.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Northwell Alt';
+  src: url('/Northwell%20Font/Northwell-Alt.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Northwell Swash';
+  src: url('/Northwell%20Font/Northwell-Swash.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #333;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+}

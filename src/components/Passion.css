@@ -1,0 +1,110 @@
+.passion {
+  background: #fafaf0;
+  padding: 50px 40px;
+}
+
+.passion-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 0;
+  margin-left: 80px;
+}
+
+.passion-title {
+  font-family: 'Trade Gothic', 'Arial Narrow', sans-serif;
+  font-size: 100px;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  transform: scaleY(1.2) scaleX(1.1);
+  transform-origin: top left;
+  background: url('/passion bg.png') no-repeat center center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.passion-subtitle {
+  font-size: 130px;
+  color: #1E3A5F;
+  line-height: 1;
+  font-family: 'Northwell', 'Playfair Display', serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-left: 350px;
+  white-space: nowrap;
+  transform: rotate(-5deg);
+  transform-origin: left center;
+}
+
+@media (max-width: 1024px) {
+  .passion-title {
+    font-size: 70px;
+  }
+  
+  .passion-subtitle {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .passion {
+    padding: 80px 20px;
+  }
+  
+  .passion-title {
+    font-size: 50px;
+  }
+  
+  .passion-subtitle {
+    font-size: 50px;
+  }
+}
+
+/* LARGE DESKTOP / WIDESCREEN */
+
+@media (min-width: 1440px) {
+  .passion {
+    padding: 80px 60px;
+  }
+
+  .passion-container {
+    max-width: 1400px;
+    margin-left: 120px;
+  }
+
+  .passion-title {
+    font-size: 130px;
+  }
+
+  .passion-subtitle {
+    font-size: 160px;
+    margin-left: 450px;
+  }
+}
+
+/* ULTRA WIDESCREEN */
+
+@media (min-width: 1920px) {
+  .passion {
+    padding: 100px 80px;
+  }
+
+  .passion-container {
+    max-width: 1600px;
+    margin-left: 160px;
+  }
+
+  .passion-title {
+    font-size: 160px;
+  }
+
+  .passion-subtitle {
+    font-size: 200px;
+    margin-left: 550px;
+  }
+}

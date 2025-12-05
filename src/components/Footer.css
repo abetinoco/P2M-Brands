@@ -1,0 +1,253 @@
+.footer {
+  background: #1e1d19;
+  color: #fff;
+  padding: 110px 10px 15px;
+  font-family: 'Trade Gothic', 'Arial Narrow', sans-serif;
+}
+
+.footer-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 0.8fr;
+  gap: 80px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-section:nth-child(2) {
+  margin-left: 80px;
+}
+
+.footer-title {
+  font-family: 'Trade Gothic', 'Arial Narrow', sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 0.95;
+  margin: 0;
+  margin-bottom: 40px;
+  text-transform: none;
+  transform: scaleY(1.2) scaleX(0.85);
+  transform-origin: top left;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  max-width: 460px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 16px 20px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.newsletter-input::placeholder {
+  color: #ffffff;
+}
+
+.newsletter-input:focus {
+  border-color: #FDB71A;
+}
+
+.newsletter-btn {
+  background: #f8b600;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  border-radius: 0;
+  min-width: 130px;
+}
+
+.newsletter-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.footer-heading {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.footer-links li {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #f8b600;
+}
+
+.footer-links a {
+  color: #f8b600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.footer-links a:hover {
+  color: #FDB71A;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-logo-image {
+  height: 40px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+
+.footer-copyright {
+  font-size: 13px;
+  color: #ffffff;
+  flex: 1;
+  text-align: center;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  width: 42px;
+  height: 42px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: #FDB71A;
+  border-color: #FDB71A;
+  color: #000;
+}
+
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-logo-image {
+    height: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 80px 20px 40px;
+  }
+  
+  .footer-title {
+    font-size: 44px;
+  }
+  
+  .newsletter {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  
+  .newsletter-btn {
+    width: 100%;
+  }
+}
+
+/* LARGE DESKTOP / WIDESCREEN */
+
+@media (min-width: 1440px) {
+  .footer-container {
+    max-width: 100%;
+    padding: 0 80px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1.5fr 0.6fr 0.6fr;
+    gap: 60px;
+  }
+}
+
+/* ULTRA WIDESCREEN */
+
+@media (min-width: 1920px) {
+  .footer-container {
+    max-width: 100%;
+    padding: 0 120px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1.8fr 0.5fr 0.5fr;
+    gap: 80px;
+  }
+
+  .footer-title {
+    font-size: 90px;
+  }
+
+  .footer-heading {
+    font-size: 22px;
+  }
+
+  .footer-links li,
+  .footer-links a {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,48 @@
+/* About Page specific styles */
+/* Inherits from Hero.css */
+
+.about-hero .hero-text {
+  padding-top: clamp(40px, 6vw, 100px);
+  position: relative;
+}
+
+.about-hero .hero-subtitle {
+  line-height: 0.7;
+  transform: scaleX(1.1) rotate(-10deg);
+  margin-left: clamp(5px, 2vw, 30px);
+  margin-top: 0;
+  margin-bottom: -105px;
+  transform-origin: left center;
+  white-space: nowrap;
+}
+
+.about-hero .hero-subtitle-small {
+  margin-top: -25px;
+  margin-left: clamp(60px, 12vw, 180px);
+  transform: scaleX(1.1);
+}
+
+.about-hero-subtext {
+  font-family: 'Futura', 'Futura-Medium', sans-serif;
+  font-weight: 500;
+  color: #000;
+  font-size: clamp(14px, 2vw, 20px);
+  line-height: 1.5;
+  margin-top: clamp(20px, 3vw, 40px);
+  margin-left: clamp(10px, 4vw, 60px);
+  max-width: 600px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .about-hero .hero-subtitle {
+    margin-bottom: -50px;
+    font-size: clamp(28px, 9vw, 60px) !important;
+  }
+  
+  .about-hero .hero-subtitle-small {
+    font-size: clamp(22px, 7vw, 48px) !important;
+    margin-left: clamp(30px, 6vw, 60px);
+    margin-top: -15px;
+  }
+}
