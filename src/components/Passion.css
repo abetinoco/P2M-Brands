@@ -29,14 +29,15 @@
 }
 
 .passion-subtitle {
-  font-size: 130px;
+  font-size: clamp(70px, 9vw, 160px);
   color: #1E3A5F;
   line-height: 1;
   font-family: 'Northwell', 'Playfair Display', serif;
   font-weight: 400;
   letter-spacing: 2px;
-  margin-left: 350px;
-  margin-top: 70px;
+  margin-left: clamp(80px, 18vw, 450px);
+  margin-top: clamp(40px, 6vw, 100px);
+  max-width: calc(100% - clamp(40px, 10vw, 160px));
   white-space: nowrap;
   transform: rotate(-5deg);
   transform-origin: left center;
@@ -95,9 +96,7 @@
   }
 
   .passion-subtitle {
-    font-size: 160px;
-    margin-left: 450px;
-    margin-top: 100px;
+    margin-left: clamp(120px, 16vw, 450px);
   }
 }
 
@@ -118,8 +117,6 @@
   }
 
   .passion-subtitle {
-    font-size: 200px;
-    margin-left: 550px;
-    margin-top: 140px;
+    margin-left: clamp(140px, 14vw, 550px);
   }
 }
