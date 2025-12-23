@@ -322,24 +322,28 @@ body.menu-open .header {
 
   .nav-content {
     flex-direction: column;
-    padding: 80px 20px 40px;
+    padding: 80px 20px 40px 70px;
     gap: 30px;
   }
 
   .nav-left {
-    flex: none;
+    flex: 1;
     order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .nav-right {
     flex: none;
     order: 1;
     justify-content: flex-start;
+    margin-bottom: 50px;
   }
 
   .nav-brand-logo {
-    max-width: 200px;
-    max-height: 80px;
+    max-width: 90px;
+    max-height: 36px;
     opacity: 1;
   }
 
@@ -348,7 +352,8 @@ body.menu-open .header {
   }
 
   .nav-main-links li a {
-    font-size: clamp(36px, 10vw, 48px);
+    font-size: clamp(48px, 14vw, 64px);
+    font-weight: 350;
     color: #1e1d19;
   }
 
@@ -357,7 +362,7 @@ body.menu-open .header {
   }
 
   .nav-divider {
-    width: 40px;
+    width: 160px;
     background-color: rgba(30, 29, 25, 0.3);
     margin: 24px 0;
   }
@@ -367,7 +372,8 @@ body.menu-open .header {
   }
 
   .nav-secondary-links li a {
-    font-size: 13px;
+    font-size: 18px;
+    font-weight: 400;
     color: #1e1d19;
   }
 
