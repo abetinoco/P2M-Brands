@@ -2,8 +2,8 @@
   position: relative;
   background: #fbfaf1;
   padding: 0 40px 56px;
-  padding-top: 50px;
-  margin-top: -12px;
+  padding-top: clamp(20px, 3vw, 40px);
+  margin-top: 0;
   overflow: visible;
   z-index: 2;
 }
@@ -71,7 +71,7 @@
 @media (max-width: 1024px) {
   .about-home {
     padding: 28px 32px 48px;
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   .about-home-panel {
@@ -85,8 +85,8 @@
 
 @media (max-width: 768px) {
   .about-home {
-    padding: 24px 20px 40px;
-    margin-top: 20px;
+    padding: 30px 20px 40px;
+    margin-top: 0;
   }
 
   .about-home-panel {

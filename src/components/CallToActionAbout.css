@@ -67,6 +67,11 @@
   gap: 50px;
   align-items: flex-start;
   margin-left: 80px;
+  width: 100%;
+}
+
+.cta-about-logos a {
+  display: inline-flex;
 }
 
 .cta-about-logo {
@@ -74,12 +79,12 @@
   width: auto;
 }
 
-.cta-about-logo:first-child {
+.cta-about-logos a:first-child {
   margin-left: 0;
 }
 
-.cta-about-logo:last-child {
-  margin-left: 60px;
+.cta-about-logos a:last-child {
+  margin-left: clamp(20px, 4vw, 80px);
 }
 
 /* Mobile responsive */
@@ -107,9 +112,10 @@
     align-items: center;
     margin-left: 0;
     gap: 30px;
+    width: auto;
   }
   
-  .cta-about-logo:last-child {
+  .cta-about-logos a:last-child {
     margin-left: 0;
   }
 }

@@ -1,3 +1,4 @@
+import logo from '../assets/images/Logo.svg'
 import './Footer.css'
 
 const Footer = () => {
@@ -38,7 +39,13 @@ const Footer = () => {
         
         <div className="footer-bottom">
           <div className="footer-logo">
-            <img src="/Logo.svg" alt="P2M Brands" className="footer-logo-image" />
+            <img
+              src={logo}
+              alt="P2M Brands"
+              className="footer-logo-image"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <p className="footer-copyright">© Copyright 2025 | P2M Brands. All Rights Reserved.</p>
         </div>

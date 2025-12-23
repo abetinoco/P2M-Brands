@@ -1,4 +1,5 @@
 import carImage from '../assets/images/car.webp'
+import dividerBottom from '../assets/images/divider-bottom.svg'
 import './Hero.css'
 
 const Hero = () => {
@@ -27,6 +28,13 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <img
+        src={dividerBottom}
+        alt=""
+        className="hero-divider"
+        loading="lazy"
+        decoding="async"
+      />
     </section>
   )
 }

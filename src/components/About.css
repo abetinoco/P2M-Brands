@@ -31,6 +31,12 @@
   z-index: 2;
 }
 
+@media (min-width: 901px) {
+  .about-script {
+    top: -45px;
+  }
+}
+
 .about-heading {
   font-family: 'Trade Gothic', 'Trade Gothic Bold Condensed', 'Oswald', sans-serif;
   font-size: clamp(90px, 13vw, 200px);

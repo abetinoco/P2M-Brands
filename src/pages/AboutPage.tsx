@@ -1,7 +1,7 @@
 import About from '../components/About'
 import CallToActionAbout from '../components/CallToActionAbout'
 import carImage from '../assets/images/car.webp'
-import divider1 from '../assets/images/divider-1.webp'
+import dividerBottom from '../assets/images/divider-bottom.svg'
 import './AboutPage.css'
 
 const AboutPage = () => {
@@ -36,20 +36,20 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-      
+
       <div className="section-divider">
         <img
-          src={divider1}
+          src={dividerBottom}
           alt=""
           className="section-divider-image"
           loading="lazy"
           decoding="async"
         />
       </div>
-      
+
       {/* About Section */}
       <About />
-      
+
       {/* CTA Section */}
       <CallToActionAbout />
     </>

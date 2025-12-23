@@ -13,10 +13,17 @@ body {
 .app {
   width: 100%;
   overflow-x: hidden;
+  transition: filter 0.3s ease;
+}
+
+body.menu-open .app>*:not(.header):not(.nav-overlay) {
+  filter: blur(8px);
 }
 
 /* Typography */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -83,9 +90,23 @@ h1, h2, h3 {
 
 .hero {
   background: #eae6db;
-  padding: clamp(80px, 10vw, 150px) 0 clamp(120px, 15vw, 220px);
+  padding: clamp(80px, 10vw, 150px) 0 clamp(150px, 22vw, 350px);
   position: relative;
   overflow: visible;
+  z-index: 5;
+}
+
+
+.hero-divider {
+  position: absolute;
+  bottom: -1px;
+  /* Align to bottom of hero container */
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: 10;
+  pointer-events: none;
 }
 
 .hero-content {
@@ -94,7 +115,7 @@ h1, h2, h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: clamp(30px, 5vw, 80px);
-  align-items: center;
+  align-items: start;
   padding-left: clamp(20px, 4vw, 60px);
   padding-right: clamp(20px, 4vw, 60px);
   position: relative;
@@ -171,7 +192,7 @@ h1, h2, h3 {
   transform: translate(-45%, -55%);
   width: 130%;
   height: 130%;
-  background-image: url('/nascar%20bg.svg');
+  background-image: url('./assets/images/nascar-bg.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -206,9 +227,7 @@ h1, h2, h3 {
 }
 
 @media (max-width: 768px) {
-  .hero {
-    padding: 130px 20px 140px;
-  }
+
 
   .hero-content {
     display: flex;
@@ -255,8 +274,9 @@ h1, h2, h3 {
   position: relative;
   background: #fbfaf1;
   padding: 0 40px 56px;
-  padding-top: 50px;
-  margin-top: -12px;
+  padding-top: 20px;
+  margin-top: -20vw;
+  /* Pull up under the divider wave */
   overflow: visible;
   z-index: 2;
 }
@@ -326,24 +346,10 @@ h1, h2, h3 {
 
 /* brand logos */
 
-.brand-logos {
-  margin-top: -4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.brand-logos img {
-  max-height: 52px;
-  width: auto;
-}
-
 @media (max-width: 1024px) {
   .about {
     padding: 28px 32px 48px;
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   .about-panel {
@@ -358,7 +364,7 @@ h1, h2, h3 {
 @media (max-width: 768px) {
   .about {
     padding: 24px 20px 40px;
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   .about-panel {
@@ -371,35 +377,5 @@ h1, h2, h3 {
 
   .signature-name {
     font-size: 32px;
-  }
-}
-
-/* Full-width divider between hero and about */
-
-.section-divider {
-  position: relative;
-  width: 100%;
-  margin-top: -80px;
-  margin-bottom: -20px;
-  line-height: 0;
-  pointer-events: none;
-  z-index: 10;
-}
-
-.section-divider-image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-@media (min-width: 768px) {
-  .section-divider {
-    margin-top: -120px;
-  }
-}
-
-@media (min-width: 1025px) {
-  .section-divider {
-    margin-top: -120px;
   }
 }
