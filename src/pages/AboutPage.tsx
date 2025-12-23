@@ -35,17 +35,14 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </section>
-
-      <div className="section-divider">
         <img
           src={dividerBottom}
           alt=""
-          className="section-divider-image"
+          className="hero-divider"
           loading="lazy"
           decoding="async"
         />
-      </div>
+      </section>
 
       {/* About Section */}
       <About />
